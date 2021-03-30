@@ -1,4 +1,5 @@
 <?php
+echo "<i>Pack, Unpack function Start</i><br>";
 
 echo "<h3>Pack</h3>";
 
@@ -22,7 +23,7 @@ echo "-------------------------";
 
 echo "<h3>UnPack</h3>";
 
-echo "<br><br>";
+echo "<br>";
 
 $binary_data = pack("i3", 56, 439, 54);
 var_dump(unpack("i3", $binary_data));
@@ -41,3 +42,4 @@ echo "<br><br>";
 print_r(unpack("H*int ",$data));
 echo "<br><br>";
 print_r(unpack("h*int ",$data));
+echo "<br><br><i>Pack, Unpack function End</i>";
