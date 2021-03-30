@@ -1,13 +1,16 @@
 <?php
 
-echo "<i>strlen function Start</i><br>";
+echo "<i>trim function Start</i><br><br>";
 
-echo strlen("Hello world!");
+$str = "Hello World!";
+echo $str . "<br>";
+echo trim($str,"d!");
 
 echo "<br><br>";
-echo strlen("Media Park");
 
-echo "<br><br>";
-echo strlen("hello how are you");
+$str = "  media park ";
+echo $str . "<br>";
+// removes all leading and trailing whitespaces
+echo trim($str);
 
-echo "<br><br><i>strlen function End</i>";
+echo "<br><br><i>trim function End</i>";
