@@ -1,0 +1,19 @@
+{
+    "name": "mediaparkpk/blake2b",
+    "description": "Media Park Pk Practice on blake2b",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "MuhammadAwais-Khan",
+            "email": "awais.khan@mediapark.pk"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "MyApp\\": [
+                "src"
+            ]
+        }
+    }
+}
