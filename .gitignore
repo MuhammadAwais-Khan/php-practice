@@ -3,7 +3,7 @@ keccak/composer.lock
 keccak/.idea/
 keccak/vendor/
 
-blake2b/composer.phar
-blake2b/composer.lock
-blake2b/.idea/
-blake2b/vendor/
+/blake2b/composer.phar
+/blake2b/composer.lock
+/blake2b/.idea/
+/blake2b/vendor/
