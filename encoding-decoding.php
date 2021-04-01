@@ -1,31 +1,22 @@
 <?php
 
-echo "<i>Hash Functions md5(), sha1(), hash() Start</i><br><br>";
+echo "<i>Encoding and decoding Start</i><br><br>";
+echo $string = 'String : "Encoding and Decoding Encrypted PHP Code"';
 
-echo "<h3>Hash()</h3>";
+echo "<h3>str_rot13 encode/decode</h3>";
+echo str_rot13($string); //Rapbqvat naq Qrpbqvat Rapelcgrq CUC Pbqr
+echo "<br>";
+echo str_rot13(str_rot13($string)); //Encoding and Decoding Encrypted PHP Code
 
-echo hash('ripemd128', 'something', false);
+echo "<h3>base64_encode/base64_decode</h3>";
+echo base64_encode($string); //RW5jb2RpbmcgYW5kIERlY29kaW5nIEVuY3J5cHRlZCBQSFAgQ29kZQ==
+echo "<br>";
+echo base64_decode(base64_encode($string)); //Encoding and Decoding Encrypted PHP Code
 
-echo "<br><br>";
+echo "<h3>gzinflate/gzdeflate</h3>";
 
-echo hash('gost', 'something', false);
+echo gzdeflate($string); //s�K�O��KWH�KQpI�r\�*JRS<��SR
+echo "<br>";
+echo gzinflate(gzdeflate($string)); //Encoding and Decoding Encrypted PHP Code
 
-echo "<br><br>";
-
-echo "<h3>Sha1()</h3>";
-
-echo sha1("media park",false);
-
-echo "<br><br>";
-
-echo sha1("islamabad",false);
-
-echo "<h3>MD5()</h3>";
-
-echo md5('media park',false);
-
-echo "<br><br>";
-
-echo md5('islamabad',false);
-
-echo "<br><br><i>Hash Functions md5(), sha1(), hash() End</i>";
+echo "<br><br><i>Encoding and decoding End</i>";
